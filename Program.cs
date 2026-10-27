@@ -63,5 +63,49 @@
 //}
 //Console.WriteLine(count);
 
-//*a
+//*
+// void PrintDivider()
+// {
+//     Console.WriteLine("----------------");
+// }
 
+
+// Console.WriteLine("Вывод 1");
+// PrintDivider();
+// Console.WriteLine("Вывод 2");
+// PrintDivider();
+// Console.WriteLine("Вывод 3");
+// //*B
+// void IsEven (int number)
+// {
+//     if (number % 2 == 0){
+//     Console.WriteLine("true");}
+//     else
+//     {
+//         Console.WriteLine("false");
+//     }
+// }
+// IsEven(4);
+
+//** 8
+// double CelsiusToFahrenheit(double celsius)
+//     {
+//     double f = celsius * 9 / 5 + 32;
+//     return f;
+// }
+// Console.WriteLine(CelsiusToFahrenheit(15));
+
+
+//10
+
+bool IsaPalindrome(string word)
+{
+    string newword = word.ToLowerInvariant();
+    for (int i = 0; i < newword.Length/2; i++)
+    {
+        if (newword[i] != newword[newword.Length - 1 - i]){return false;}
+    }
+    return true;
+}
+Console.WriteLine(IsaPalindrome("dssd"));
+Console.WriteLine(IsaPalindrome("DWEQUYJ"));
